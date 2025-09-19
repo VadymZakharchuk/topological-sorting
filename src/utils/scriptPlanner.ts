@@ -78,7 +78,7 @@ export const createExecutionPlan = (
   if (processedScriptsCount !== totalScripts) {
     warnings.push('Error: Not all scripts were included in the execution plan due to missing or circular dependencies.');
   }
-  const efficiency = totalWaves > 0 ? 1 / totalWaves : 0;
+  const efficiency = totalWaves > 0 ? totalScripts / totalWaves : 0;
 
   return {
     waves,
