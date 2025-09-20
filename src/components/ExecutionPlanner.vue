@@ -23,7 +23,7 @@
 
     <div v-if="executionPlan" class="flex flex-col gap-y-6">
       <div v-if="executionPlan.waves.length > 0" class="h-fit">
-        <h2 class="text-xl font-semibold mb-4 text-gray-700 mt-4 px-6">Execution plan</h2>
+        <h3 class="text-xl font-semibold mb-4 text-gray-700 mt-4 px-6">Execution plan</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           <div
             v-for="(wave, index) in executionPlan.waves"

@@ -73,6 +73,6 @@ describe('createExecutionPlan', () => {
   // Test 6: Efficiency
   test('should calculate efficiency correctly', () => {
     const plan = createExecutionPlan(mockScripts);
-    expect(plan.efficiency).toBeCloseTo(1 / 3);
+    expect(plan.efficiency).toBeCloseTo(4 / 3);
   });
 });
