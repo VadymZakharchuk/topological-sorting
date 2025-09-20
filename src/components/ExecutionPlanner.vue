@@ -19,6 +19,9 @@
       >
         Generate plan
       </button>
+      <div v-if="parseError" class="bg-red-200 text-red-800 p-3 rounded-md shadow">
+        {{ parseError }}
+      </div>
     </div>
 
     <div v-if="executionPlan" class="flex flex-col gap-y-6">
